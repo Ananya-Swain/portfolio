@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ananya Swain — Portfolio</title>
+  <meta name="description" content="Portfolio of Ananya Swain — MCA student, Machine Learning intern, and developer." />
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="avatar" id="avatar"><img src="./assets/profilePicture.jpg" alt=""></div>
+        <div>
+          <h1 id="name">Ananya Swain</h1>
+          <p class="lead" id="tagline">MCA • Machine Learning Intern • Full‑stack enthusiast</p>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <a id="github-link" href="https://github.com/ananya-swain" target="_blank" rel="noopener" title="GitHub">GitHub</a>
+        <a id="linkedin-link" href="http://www.linkedin.com/in/ananyaswain" target="_blank" rel="noopener" title="LinkedIn">LinkedIn</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="card about" id="about">
+        <h2>About me</h2>
+        <p id="about-text">I am a Master of Computer Applications (MCA) student and a machine learning intern with experience building web apps and ML systems. I build end-to-end projects using Python (Keras/TensorFlow), Streamlit, JavaScript, HTML/CSS and enjoy turning ideas into user-friendly apps.</p>
+
+        <div class="skills" id="skills">
+          <div class="skill">Python</div>
+          <div class="skill">Keras / TensorFlow</div>
+          <div class="skill">Streamlit</div>
+          <div class="skill">JavaScript</div>
+          <div class="skill">HTML &amp; CSS</div>
+          <div class="skill">Machine Learning</div>
+          <div class="skill">OOP (Python)</div>
+        </div>
+
+        <div style="margin-top:14px">
+          <a class="btn" href="#projects">See projects</a>
+        </div>
+      </div>
+
+      <aside class="card" style="height:100%">
+        <h3 style="margin-top:0">Quick profile</h3>
+        <p style="color:var(--muted);margin:6px 0 10px">MCA student • ML intern • Building leaf disease detection, web apps and interactive JavaScript games.</p>
+
+        <div style="display:flex;gap:8px;flex-direction:column">
+          <a class="btn" id="resume-btn" href="https://drive.google.com/file/d/1pqLb75ABXRJLYPRAjidZhg9Qv1omlR6C/view?usp=sharing" target="_blank">Download Resume</a>
+          <a class="btn" href="https://github.com/ananya-swain" target="_blank">View GitHub</a>
+          <a class="btn" href="http://www.linkedin.com/in/ananyaswain" target="_blank">View LinkedIn</a>
+        </div>
+      </aside>
+    </section>
+
+    <section id="projects-section">
+      <h2 style="margin-top:28px">Projects</h2>
+      <div class="projects" id="projects">
+        <div class="project" data-title="Leaf Disease Detection" data-desc="A leaf disease detection system using Convolutional Neural Networks. Implemented in Python and showcased as a Jupyter Notebook / Streamlit app." data-link="https://github.com/ananya-swain/Leaf-Disease-Detection">
+          <h3>Leaf Disease Detection</h3>
+          <p>Convolutional Neural Network to detect diseases in leaves — demo + dataset + model notebook.</p>
+        </div>
+
+        <div class="project" data-title="Currency Converter" data-desc="A real-time currency converter web app using exchange-rate APIs and dynamic flags." data-link="https://github.com/ananya-swain/Currency-Convertor">
+          <h3>Currency Converter</h3>
+          <p>Real-time exchange rates, country flags, and smooth UI built with HTML/CSS/JS.</p>
+        </div>
+
+        <div class="project" data-title="Rock Paper Scissors" data-desc="An interactive Rock-Paper-Scissors game with score tracking and responsive UI." data-link="https://github.com/ananya-swain/Rock-Paper-Scissors">
+          <h3>Rock Paper Scissors</h3>
+          <p>Browser game using vanilla JavaScript and simple animations.</p>
+        </div>
+
+        <div class="project" data-title="Tic Tac Toe" data-desc="A classic Tic-Tac-Toe game with two-player mode and win/draw detection." data-link="https://github.com/ananya-swain/Tic-Tac-Toe">
+          <h3>Tic Tac Toe</h3>
+          <p>Two-player turn-based game with reset functionality.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer id="contact">
+      <div>
+        <strong>Contact</strong>
+        <div style="color:var(--muted);font-size:14px">Email: <span id="email">(add email)</span></div>
+      </div>
+      <div style="display:flex;gap:8px">
+        <a class="btn" href="https://github.com/ananya-swain" target="_blank">GitHub</a>
+        <a class="btn" href="http://www.linkedin.com/in/ananyaswain" target="_blank">LinkedIn</a>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal-backdrop" id="modalBackdrop">
+    <div class="modal card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="close" id="modalClose">✕</button>
+      <h3 id="modalTitle">Project</h3>
+      <p id="modalDesc" style="color:var(--muted)"></p>
+      <div style="margin-top:12px">
+        <a class="btn" id="modalRepo" href="#" target="_blank">View Repository</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
